@@ -7,12 +7,6 @@ class Player:
         self.isReady = False
         self.coords = []
 
-    def addPlayerScore(self, count): #score function draft
-        if(self.score >= 0):
-            self.score += count
-        else:
-            self.score = 0
-
     def isMoveReady(self, isMoveOk):
         if(isMoveOk == 1):
             self.isReady = True
