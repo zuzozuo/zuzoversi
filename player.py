@@ -24,7 +24,3 @@ class Player:
         else:
             print("Wrong move! Try again!")
             return [-1, -1]
-            
-    
-
-    

@@ -54,12 +54,3 @@ while(board.canPlay() == 1):
             playerMove = True
             board.printBoard()
             board.printScore()
-            
-
-
-
-
-
-
-    #draw
-     #board.printBoard()

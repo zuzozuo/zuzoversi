@@ -119,8 +119,3 @@ class Board:
         print("\nYour score is: {}".format(self.scores[0]))
         print("\nComputer score is: {}\n".format(self.scores[1]))
      
-           
-
-
-
-    

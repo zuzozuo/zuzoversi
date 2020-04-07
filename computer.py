@@ -17,4 +17,3 @@ class Computer:
             self.isReady = True
         else:
             self.isReady = False
-
