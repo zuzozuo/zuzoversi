@@ -7,4 +7,4 @@
 
 ##WHAT IS LEFT
 - make menu with options:
-    -.computer vs computer (AI) list item
+    -computer vs computer (AI) 
