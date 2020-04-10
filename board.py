@@ -1,3 +1,4 @@
+import random
 class Board:
     def __init__(self):
         self.board = [[0, 0, 0, 0, 0, 0, 0, 0],
@@ -118,4 +119,46 @@ class Board:
 
         print("\nYour score is: {}".format(self.scores[0]))
         print("\nComputer score is: {}\n".format(self.scores[1]))
+
+    def randomBoard(self, howMany):
+        COLOR1 = 1
+        COLOR2 = 2
+
+        color1Move = True
+        color2Move = False
+        i = 0
+        coords1 = [0, 0]
+        coords2 = [0, 0]
+
+        while( i < howMany - 4):  
+            
+            if color1Move:              
+
+                if (self.canPlace(coords1[0], coords1[1], COLOR1, COLOR2, True)):
+                    self.placeOnBoard(coords1[0], coords1[1], COLOR1)
+                    color1Move = False
+                    color2Move = True
+                    i+=1
+                else:
+                    coords1 = [random.randint(0,7), random.randint(0,7)]
+
+            if color2Move:
+                if (self.canPlace(coords2[0], coords2[1], COLOR2, COLOR1, True)):
+                    self.placeOnBoard(coords2[0], coords2[1], COLOR2)
+                    color2Move = False
+                    color1Move = True
+                    i+=1
+                else:
+                    coords2 = [random.randint(0,7), random.randint(0,7)]
+            
+        self.countScores(COLOR1, COLOR2)
+        self.printBoard()
+
+        print("There are {} paws of 1 color and {} of 2 color".format(self.scores[0], self.scores[1]))
+
+
+
+
+
+        
      

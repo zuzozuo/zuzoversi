@@ -1,4 +1,4 @@
-#more content soon
+#Morde content soon
 import random
 
 class Computer:
