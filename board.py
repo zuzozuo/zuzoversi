@@ -49,7 +49,7 @@ class Board:
         directions = [[-1,-1],[0, -1], [1,-1], [-1,0], [1,0], [-1,1], [0,1], [1,1]] #we don't check [0, 0], because it's the position where we are currently
         
 
-        for xdir, ydir in directions: #x pionowy y poziomy pamietaj zuz
+        for xdir, ydir in directions: 
             checkx = x
             checky = y
 
